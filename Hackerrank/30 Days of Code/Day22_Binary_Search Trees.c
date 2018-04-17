@@ -18,7 +18,7 @@ int getHeight(Node* root){
     int rightDepth=0;
 
     if(root==NULL) {
-        return 0;
+        return -1;
     }
     else{
             if(root->left!= NULL)
