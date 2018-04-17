@@ -21,11 +21,11 @@ int getHeight(Node* root){
         return -1;
     }
     else{
-            if(root->left!= NULL)
-                leftDepth = getHeight(root->left) + 1;
+		if(root->left!= NULL)
+			leftDepth = getHeight(root->left) + 1;
             
-            if(root->right!= NULL)
-                rightDepth = getHeight(root->right) + 1;
+        if(root->right!= NULL)
+			rightDepth = getHeight(root->right) + 1;
               
         return (leftDepth > rightDepth ? leftDepth : rightDepth);
     }
